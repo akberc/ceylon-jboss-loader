@@ -6,8 +6,8 @@ Module Loader for JBoss and Wildfly that allows Ceylon modules in web applicatio
 Sample Web Application
 ----------------------
 See [`https://github.com/dgwave/ceylon-jboss-loader/tree/master/src/test/resources/webapp`](https://github.com/dgwave/ceylon-jboss-loader/tree/master/src/test/resources/webapp)
-- The Ceylon module containing your Ceylon servlets needs to be defined in [`https://github.com/dgwave/ceylon-jboss-loader/blob/master/src/test/resources/webapp/WEB-INF/jboss-deployment-structure.xml`](https://github.com/dgwave/ceylon-jboss-loader/blob/master/src/test/resources/webapp/WEB-INF/jboss-deployment-structure.xml) as `<resource-root path="WEB-INF/lib/hello.world-1.0.0.car"/>` or any other path within your WAR.
-- For now, immediate dependencies of your srvlet Ceylon module need to be defined similar to `<module name="ceylon.html" slot="1.0.0"/>`.  Transitive dependencies are handled automatically. With an upcoming Wildfly subssystem that we are developing, this will not be necessary.
+- The Ceylon module containing your Ceylon servlets needs to be defined in [`WEB-INF/jboss-deployment-structure.xml`](https://github.com/dgwave/ceylon-jboss-loader/blob/master/src/test/resources/webapp/WEB-INF/jboss-deployment-structure.xml) as `<resource-root path="WEB-INF/lib/hello.world-1.0.0.car"/>` or any other path within your WAR.
+- For now, immediate dependencies of your servlet Ceylon module need to be defined similar to `<module name="ceylon.html" slot="1.0.0"/>`.  Transitive dependencies are handled automatically. With an upcoming Wildfly subsystem that we are developing, this will not be necessary.
 
 Adding Ceylon Add-on Layer to Wildfly 8.0
 -----------------------------------------
