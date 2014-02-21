@@ -1,0 +1,13 @@
+<jboss-deployment-structure xmlns="urn:jboss:deployment-structure:1.2">
+  <deployment>
+     <resources>
+        <resource-root path="WEB-INF/lib/hello.world-1.0.0.car"/>
+        <resource-root path="WEB-INF/classes/"/>
+     </resources>
+   <!-- This allows you to define additional dependencies, it is the same as using the Dependencies: manifest attribute --> 
+    <dependencies>
+      <module name="ceylon.language" slot="1.0.0"/>
+      <module name="ceylon.html" slot="1.0.0"/>
+    </dependencies>	 
+  </deployment>
+</jboss-deployment-structure>

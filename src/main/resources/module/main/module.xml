@@ -1,0 +1,12 @@
+<module xmlns="urn:jboss:module:1.0" name="com.dgwave.car.loader">
+    <resources>
+        <resource-root path="ceylon-loader-0.5.jar">
+            <filter>
+                <exclude path="com/redhat/ceylon/compiler/java/metadata" />
+            </filter>
+        </resource-root>
+    </resources>
+
+    <dependencies>
+    </dependencies>
+</module>
